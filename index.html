@@ -92,10 +92,13 @@
 
   /* ---------- Header ---------- */
   header{
-    display:flex; justify-content:space-between; align-items:center;
-    padding:18px 0; position:sticky; top:0; z-index:60;
+    position:sticky; top:0; z-index:60;
     background:rgba(14,30,33,.86); backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
+  }
+  .header-bar{
+    display:flex; justify-content:space-between; align-items:center;
+    padding-top:18px; padding-bottom:18px; position:relative;
   }
   .logo{font-family:var(--display); font-weight:600; font-size:19px; text-decoration:none; display:flex; align-items:center; gap:8px;}
   .logo .dot{width:11px; height:11px; border-radius:50%; background:var(--coral);}
@@ -372,7 +375,7 @@
   }
   @media (max-width:420px){
     .wrap{padding:0 16px;}
-    header{padding:14px 0;}
+    header .header-bar{padding-top:14px; padding-bottom:14px;}
     .logo{font-size:16.5px;}
     .header-right{gap:8px;}
     .lang-toggle button{padding:7px 10px; font-size:11px;}
@@ -398,9 +401,9 @@
 <script>document.documentElement.className+=" js";</script>
 <body>
 <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span><span class="a4"></span></div>
-<div class="wrap">
 
-  <header>
+<header>
+  <div class="wrap header-bar">
     <a class="logo" href="#top"><span class="dot"></span>K. Pedrozo</a>
     <div class="header-right">
       <nav id="mainNav">
@@ -418,7 +421,10 @@
         <span></span>
       </button>
     </div>
-  </header>
+  </div>
+</header>
+
+<div class="wrap">
 
   <section class="hero" id="top">
     <div>
