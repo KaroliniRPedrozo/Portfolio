@@ -3,200 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karolini R. Pedrozo</title>
-<meta name="description" content="Karolini Ronzani Pedrozo, estudante de TIC na UFSC. Backend, dados e alguns projetos com IA.">
+<title>Karolini R. Pedrozo · Portfólio</title>
+<meta name="description" content="Portfólio de Karolini Ronzani Pedrozo, estudante de TIC na UFSC. Backend, dados e projetos com IA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<header class="site-header">
   <div class="wrap header-bar">
-    <a class="logo" href="#top">Karolini R. Pedrozo</a>
-    <div class="header-right">
-      <nav>
-        <a href="#sobre" data-i18n="nav.about">sobre</a>
-        <a href="#projetos" data-i18n="nav.projects">projetos</a>
-        <a href="#experiencia" data-i18n="nav.experience">experiência</a>
-        <a href="#contato" data-i18n="nav.contact">contato</a>
-      </nav>
-      <div class="lang-toggle" role="group" aria-label="Idioma / Language">
-        <button id="btnPt" aria-pressed="true">pt</button>
-        <button id="btnEn" aria-pressed="false">en</button>
-      </div>
+    <a class="mark" href="#top" aria-label="Início">kp<span>.</span></a>
+    <nav>
+      <a href="#projetos" data-i18n="nav.projects">projetos</a>
+      <a href="#sobre" data-i18n="nav.about">sobre</a>
+      <a href="#experiencia" data-i18n="nav.experience">experiência</a>
+      <a href="#contato" data-i18n="nav.contact">contato</a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <button id="btnPt" aria-pressed="true">PT</button>
+      <button id="btnEn" aria-pressed="false">EN</button>
     </div>
   </div>
 </header>
 
-<main class="wrap" id="top">
+<main id="top">
 
-  <div class="intro">
-    <h1>Karolini R. Pedrozo</h1>
-    <p class="role" data-i18n="intro.role">Backend e dados · Araranguá, SC</p>
-    <p class="lead" data-i18n="intro.lead">Estudo Tecnologia da Informação e Comunicação na UFSC e me formo em 2026. Já trabalhei com suporte de T.I., redes e gestão de dados, e é para backend e dados que quero seguir. Meu principal projeto pessoal é o <a href="https://chronos-bot-5vhx.vercel.app/" target="_blank" rel="noopener">ChronosBot</a>, uma plataforma de tutoria com IA.</p>
-    <p class="status" data-i18n="intro.status">Procuro estágio ou primeiro emprego em desenvolvimento, suporte de T.I. ou dados.</p>
-    <div class="links">
-      <a href="mailto:karolini188@gmail.com">karolini188@gmail.com</a>
-      <a href="https://www.linkedin.com/in/karolini-ronzani-pedrozo-48124b268/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/KaroliniRPedrozo" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </div>
-
-  <section id="sobre">
-    <h2 data-i18n="about.h2">Sobre</h2>
-    <div class="about">
-      <div>
-        <p data-i18n="about.p1">Entrei no curso de TIC da UFSC em 2023, no campus de Araranguá. Desde então fiz estágio no setor de T.I. da universidade, fui bolsista no Rexlab, onde dava suporte aos sistemas de experimentação remota e fazia análises de dados, e hoje sou bolsista no LabTec.</p>
-        <p data-i18n="about.p2">Antes da área de tecnologia trabalhei com crianças, em uma secretaria municipal e no varejo. Também faço design gráfico e marketing digital, o que acaba ajudando quando preciso montar uma interface do zero.</p>
-        <p data-i18n="about.p3">Falo português e inglês em nível intermediário.</p>
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="status"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.status">Procurando estágio ou primeiro emprego</span></p>
+      <h1>Karolini<br>Pedrozo</h1>
+      <p class="hero-role" data-i18n="hero.role">Desenvolvedora backend e de dados</p>
+      <p class="hero-lead" data-i18n="hero.lead">Estudo Tecnologia da Informação e Comunicação na UFSC e me formo em 2026. Gosto de projetos que vão do banco de dados até o deploy, como o ChronosBot, um tutor com IA que está no ar.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="#projetos" data-i18n="hero.cta1">Ver projetos</a>
+        <a class="btn btn-line" href="mailto:karolini188@gmail.com" data-i18n="hero.cta2">Mandar e-mail</a>
       </div>
-      <img src="img/foto.jpg" alt="Foto de Karolini R. Pedrozo" data-i18n-alt="about.alt" width="132" height="132">
     </div>
+    <figure class="hero-photo">
+      <img src="img/foto.jpg" alt="Foto de Karolini R. Pedrozo" data-i18n-alt="about.alt" width="700" height="700">
+      <figcaption>Araranguá, SC</figcaption>
+    </figure>
   </section>
 
-  <section id="ferramentas">
-    <h2 data-i18n="tools.h2">Ferramentas</h2>
-    <dl class="tools">
-      <dt>Backend</dt><dd>Java, C# / .NET, Python (FastAPI), SQL</dd>
-      <dt>Frontend</dt><dd>React, JavaScript, TypeScript, HTML e CSS, Vite</dd>
-      <dt data-i18n="tools.data">Dados e IA</dt><dd data-i18n="tools.data.v">PostgreSQL com pgvector, ChromaDB, API do Gemini, RAG</dd>
-      <dt data-i18n="tools.infra">Infra e suporte</dt><dd data-i18n="tools.infra.v">Suporte técnico, redes, Git, Render, Vercel, Neon</dd>
-      <dt>Design</dt><dd>Blender, Figma, Photoshop, Illustrator, CorelDRAW, GIMP</dd>
-    </dl>
-  </section>
+  <section id="projetos" class="wrap block">
+    <div class="block-head">
+      <h2 data-i18n="projects.h2">Projetos</h2>
+      <p data-i18n="projects.p">O que construí nos últimos anos, quase tudo do zero.</p>
+    </div>
 
-  <section id="projetos">
-    <h2 data-i18n="projects.h2">Projetos</h2>
-    <div>
-      <article class="project">
-        <h3><a href="https://chronos-bot-5vhx.vercel.app/" target="_blank" rel="noopener">ChronosBot</a><span class="note" data-i18n="projects.live">no ar</span></h3>
-        <div class="meta">FastAPI · React · PostgreSQL/pgvector · ChromaDB · Gemini · <a href="https://github.com/KaroliniRPedrozo/ChronosBot" target="_blank" rel="noopener" data-i18n="projects.code">código</a></div>
+    <article class="project featured">
+      <a class="shot" href="https://chronos-bot-5vhx.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+        <span class="shot-bar"><i></i><i></i><i></i><span>chronos-bot-5vhx.vercel.app</span></span>
+        <img src="img/chronos.jpg" alt="" loading="lazy" width="1280" height="800">
+      </a>
+      <div class="project-body">
+        <p class="kicker"><span data-i18n="projects.chronos.kicker">Projeto principal</span> · <span class="live" data-i18n="projects.live">no ar</span></p>
+        <h3><a href="https://chronos-bot-5vhx.vercel.app/" target="_blank" rel="noopener">ChronosBot</a></h3>
         <p data-i18n="projects.chronos.desc">Tutor de História e Geografia com IA. O professor monta a base de conhecimento de cada turma e os alunos fazem perguntas; as respostas são geradas pelo Gemini com RAG em cima desse material.</p>
         <ul>
-          <li data-i18n="projects.chronos.h1">Embeddings e respostas pela API do Gemini.</li>
-          <li data-i18n="projects.chronos.h2">Geração de embeddings em paralelo com ThreadPoolExecutor (5 workers).</li>
-          <li data-i18n="projects.chronos.h3">Banco no Neon, API no Render e frontend na Vercel.</li>
+          <li data-i18n="projects.chronos.h1">Embeddings gerados em paralelo com ThreadPoolExecutor (5 workers).</li>
+          <li data-i18n="projects.chronos.h2">Banco no Neon, API no Render e frontend na Vercel.</li>
         </ul>
+        <div class="tags"><span>FastAPI</span><span>React</span><span>pgvector</span><span>ChromaDB</span><span>Gemini</span></div>
+        <div class="project-links">
+          <a href="https://chronos-bot-5vhx.vercel.app/" target="_blank" rel="noopener" data-i18n="projects.site">Abrir site</a>
+          <a href="https://github.com/KaroliniRPedrozo/ChronosBot" target="_blank" rel="noopener" data-i18n="projects.code">Código</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="project-grid">
+      <article class="project">
+        <a class="shot" href="https://cyphers-analytics.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="img/cyphers.jpg" alt="" loading="lazy" width="1280" height="800">
+        </a>
+        <div class="project-body">
+          <h3><a href="https://cyphers-analytics.vercel.app/" target="_blank" rel="noopener">Cypher's Analytics</a></h3>
+          <p data-i18n="projects.cyphers.desc">Reúne e analisa dados de partidas a partir da API da Riot Games. Backend em .NET com Clean Architecture e frontend em React.</p>
+          <div class="tags"><span>.NET/C#</span><span>React</span><span>TypeScript</span><span>PostgreSQL</span></div>
+          <div class="project-links">
+            <a href="https://cyphers-analytics.vercel.app/" target="_blank" rel="noopener" data-i18n="projects.site">Abrir site</a>
+            <a href="https://github.com/KaroliniRPedrozo/CyphersAnalytics" target="_blank" rel="noopener" data-i18n="projects.code">Código</a>
+          </div>
+        </div>
       </article>
 
       <article class="project">
-        <h3><a href="https://cyphers-analytics.vercel.app/" target="_blank" rel="noopener">Cypher's Analytics</a></h3>
-        <div class="meta">.NET/C# · React · TypeScript · PostgreSQL · Riot API · <a href="https://github.com/KaroliniRPedrozo/CyphersAnalytics" target="_blank" rel="noopener" data-i18n="projects.code">código</a></div>
-        <p data-i18n="projects.cyphers.desc">Reúne e analisa dados de partidas a partir da API da Riot Games.</p>
-        <ul>
-          <li data-i18n="projects.cyphers.h1">Backend em .NET/C# com Clean Architecture e endpoints REST assíncronos.</li>
-          <li data-i18n="projects.cyphers.h2">Frontend em React com TypeScript e estado global.</li>
-          <li data-i18n="projects.cyphers.h3">Modelagem relacional e otimização de consultas no PostgreSQL.</li>
-        </ul>
+        <a class="shot" href="https://karolinirpedrozo.github.io/AgendaSaude/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <img src="img/agenda.jpg" alt="" loading="lazy" width="1280" height="800">
+        </a>
+        <div class="project-body">
+          <h3><a href="https://karolinirpedrozo.github.io/AgendaSaude/" target="_blank" rel="noopener">AgendaSaúde</a></h3>
+          <p data-i18n="projects.agenda.desc">Agendamento em unidades de saúde, passo a passo, pensado para acessibilidade e com versões em português, inglês e espanhol.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span data-i18n="projects.agenda.tag">Acessibilidade</span></div>
+          <div class="project-links">
+            <a href="https://karolinirpedrozo.github.io/AgendaSaude/" target="_blank" rel="noopener" data-i18n="projects.site">Abrir site</a>
+            <a href="https://github.com/KaroliniRPedrozo/IHC-Acessibilidade" target="_blank" rel="noopener" data-i18n="projects.code">Código</a>
+          </div>
+        </div>
       </article>
 
       <article class="project">
-        <h3><a href="https://github.com/KaroliniRPedrozo/GTA-V-Charts-With-API" target="_blank" rel="noopener">GTA V Analytics &amp; Telemetry</a></h3>
-        <div class="meta">Python · Pandas · Matplotlib · Plotly</div>
-        <p data-i18n="projects.gta.desc">Scripts em Python que coletam dados de telemetria, tratam com Pandas e geram gráficos. Tem um repositório espelho que roda sem consumir a API, para comparar as duas arquiteturas.</p>
-      </article>
-
-      <article class="project">
-        <h3><a href="https://karolinirpedrozo.github.io/AgendaSaude/" target="_blank" rel="noopener">AgendaSaúde</a></h3>
-        <div class="meta">HTML · CSS · JavaScript · i18n · <a href="https://github.com/KaroliniRPedrozo/IHC-Acessibilidade" target="_blank" rel="noopener" data-i18n="projects.code">código</a></div>
-        <p data-i18n="projects.agenda.desc">Página de agendamento pensada para acessibilidade, com versão em mais de um idioma.</p>
+        <a class="shot shot-chart" href="https://github.com/KaroliniRPedrozo/GTA-V-Charts-With-API" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="none">
+            <g class="bars"><rect x="24" y="120" width="28" height="60"/><rect x="66" y="84" width="28" height="96"/><rect x="108" y="104" width="28" height="76"/><rect x="150" y="52" width="28" height="128"/><rect x="192" y="70" width="28" height="110"/><rect x="234" y="36" width="28" height="144"/><rect x="276" y="60" width="28" height="120"/></g>
+            <line x1="16" y1="180" x2="312" y2="180"/>
+          </svg>
+          <span class="chart-label">GTA V · telemetry</span>
+        </a>
+        <div class="project-body">
+          <h3><a href="https://github.com/KaroliniRPedrozo/GTA-V-Charts-With-API" target="_blank" rel="noopener">GTA V Analytics</a></h3>
+          <p data-i18n="projects.gta.desc">Scripts em Python que coletam dados de telemetria, tratam com Pandas e geram gráficos. Tem uma versão espelho que roda sem consumir a API.</p>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Plotly</span></div>
+          <div class="project-links">
+            <a href="https://github.com/KaroliniRPedrozo/GTA-V-Charts-With-API" target="_blank" rel="noopener" data-i18n="projects.code">Código</a>
+          </div>
+        </div>
       </article>
     </div>
   </section>
 
-  <section id="experiencia">
-    <h2 data-i18n="exp.h2">Experiência</h2>
-    <ol class="entries">
-      <li class="entry">
-        <div class="when" data-i18n="exp.labtec.date">2026 – hoje</div>
-        <div>
-          <div class="what" data-i18n="exp.labtec.title">Bolsista <span class="org">· <a href="https://labtec.ufsc.br/" target="_blank" rel="noopener">LabTec/UFSC</a></span></div>
+  <section id="sobre" class="wrap block about">
+    <div class="block-head">
+      <h2 data-i18n="about.h2">Sobre</h2>
+    </div>
+    <div class="about-text">
+      <p class="big" data-i18n="about.p1">Entrei no curso de TIC da UFSC em 2023. Desde então passei pelo setor de T.I. da universidade, pelo Rexlab e hoje estou no LabTec.</p>
+      <p data-i18n="about.p2">Antes da tecnologia trabalhei com crianças, em uma secretaria municipal e no varejo. Também faço design gráfico e marketing digital, o que ajuda bastante quando preciso montar uma interface do zero. Falo português e inglês em nível intermediário.</p>
+    </div>
+    <div class="tools">
+      <div><h3>Backend</h3><p>Java · C# / .NET · Python · FastAPI · SQL</p></div>
+      <div><h3>Frontend</h3><p>React · TypeScript · JavaScript · HTML/CSS · Vite</p></div>
+      <div><h3 data-i18n="tools.data">Dados e IA</h3><p>PostgreSQL · pgvector · ChromaDB · Gemini · RAG</p></div>
+      <div><h3 data-i18n="tools.infra">Infra e suporte</h3><p data-i18n="tools.infra.v">Redes · suporte técnico · Git · Render · Vercel · Neon</p></div>
+      <div><h3>Design</h3><p>Blender · Figma · Photoshop · Illustrator · CorelDRAW</p></div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="wrap block">
+    <div class="block-head">
+      <h2 data-i18n="exp.h2">Experiência</h2>
+    </div>
+    <div class="cv">
+      <ol class="entries">
+        <li>
+          <span class="when" data-i18n="exp.labtec.date">2026 – hoje</span>
+          <h3 data-i18n="exp.labtec.title">Bolsista · <a href="https://labtec.ufsc.br/" target="_blank" rel="noopener">LabTec/UFSC</a></h3>
           <p data-i18n="exp.labtec.desc">Modelagem 3D no Blender para o <a href="https://holoanapath.ufsc.br/" target="_blank" rel="noopener">HoloAnaPath</a>, projeto de patologia digital da UFSC.</p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">03/2025 – 12/2025</div>
-        <div>
-          <div class="what" data-i18n="exp.ti.title">Estagiária de T.I. <span class="org">· <a href="https://sti.ararangua.ufsc.br/" target="_blank" rel="noopener">UFSC Araranguá</a></span></div>
+        </li>
+        <li>
+          <span class="when">03/2025 – 12/2025</span>
+          <h3 data-i18n="exp.ti.title">Estagiária de T.I. · <a href="https://sti.ararangua.ufsc.br/" target="_blank" rel="noopener">UFSC Araranguá</a></h3>
           <p data-i18n="exp.ti.desc">Atendia chamados de hardware, software e rede, cuidava do inventário de equipamentos e automatizei a instalação de programas em vários departamentos.</p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">09/2024 – 02/2025</div>
-        <div>
-          <div class="what" data-i18n="exp.rexlab.title">Bolsista <span class="org">· <a href="https://rexlab.ufsc.br/" target="_blank" rel="noopener">Rexlab</a>, Laboratório de Experimentação Remota</span></div>
-          <p data-i18n="exp.rexlab.desc">Suporte aos sistemas de experimentação remota usados por alunos e pesquisadores. Também fazia análises estatísticas e gráficos para o laboratório.</p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">02/2024 – 09/2024</div>
-        <div>
-          <div class="what" data-i18n="exp.caic.title">Auxiliar de desenvolvimento infantil <span class="org">· CAIC Jardim das Avenidas</span></div>
-          <p data-i18n="exp.caic.desc">Conduzia atividades de desenvolvimento cognitivo e motor com as crianças, e boa parte do trabalho era comunicação e mediação de conflitos.</p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">11/2023 – 02/2024</div>
-        <div>
-          <div class="what" data-i18n="exp.cultura.title">Estagiária <span class="org">· <a href="https://ararangua.sc.gov.br/secretaria-de-educacao-cultura-e-esportes-departamento-de-cultura/" target="_blank" rel="noopener">Secretaria da Cultura de Araranguá</a></span></div>
-          <p data-i18n="exp.cultura.desc">Organizava as informações administrativas da secretaria e mantinha os registros em dia no sistema.</p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">05/2023 – 08/2023</div>
-        <div>
-          <div class="what" data-i18n="exp.fort.title">Repositora <span class="org">· Fort Atacadista</span></div>
+        </li>
+        <li>
+          <span class="when">09/2024 – 02/2025</span>
+          <h3 data-i18n="exp.rexlab.title">Bolsista · <a href="https://rexlab.ufsc.br/" target="_blank" rel="noopener">Rexlab</a></h3>
+          <p data-i18n="exp.rexlab.desc">Suporte aos sistemas de experimentação remota usados por alunos e pesquisadores, além de análises estatísticas e gráficos para o laboratório.</p>
+        </li>
+        <li>
+          <span class="when">02/2024 – 09/2024</span>
+          <h3 data-i18n="exp.caic.title">Auxiliar de desenvolvimento infantil · CAIC Jardim das Avenidas</h3>
+          <p data-i18n="exp.caic.desc">Atividades de desenvolvimento cognitivo e motor com as crianças; boa parte do trabalho era comunicação e mediação de conflitos.</p>
+        </li>
+        <li>
+          <span class="when">11/2023 – 02/2024</span>
+          <h3 data-i18n="exp.cultura.title">Estagiária · <a href="https://ararangua.sc.gov.br/secretaria-de-educacao-cultura-e-esportes-departamento-de-cultura/" target="_blank" rel="noopener">Secretaria da Cultura de Araranguá</a></h3>
+          <p data-i18n="exp.cultura.desc">Organizava as informações administrativas e mantinha os registros em dia no sistema.</p>
+        </li>
+        <li>
+          <span class="when">05/2023 – 08/2023</span>
+          <h3 data-i18n="exp.fort.title">Repositora · Fort Atacadista</h3>
           <p data-i18n="exp.fort.desc">Reposição e organização do estoque, conferindo prazos e o padrão de exposição.</p>
+        </li>
+      </ol>
+
+      <aside class="edu">
+        <h3 class="edu-title" data-i18n="edu.h2">Formação</h3>
+        <div class="edu-item">
+          <span class="when">2023 – 2026</span>
+          <p class="edu-name"><a href="https://tic.ufsc.br/" target="_blank" rel="noopener" data-i18n="edu.grad.title">Bacharelado em TIC, UFSC</a></p>
+          <p class="edu-meta" data-i18n="edu.grad.meta">Campus Araranguá</p>
         </div>
-      </li>
-    </ol>
+        <div class="edu-item">
+          <span class="when">09/2026</span>
+          <p class="edu-name"><a href="https://cursos.alura.com.br/immersion/certificate/870fbf79-d404-41a5-aa83-09f646d0f03c" target="_blank" rel="noopener" data-i18n="edu.dados.title">Imersão Engenharia de Dados com IA</a></p>
+          <p class="edu-meta" data-i18n="edu.meta">Alura · 4 h · certificado</p>
+        </div>
+        <div class="edu-item">
+          <span class="when">07/2026</span>
+          <p class="edu-name"><a href="https://cursos.alura.com.br/immersion/certificate/513eef50-46ef-4b8c-b30c-eafadacb5631" target="_blank" rel="noopener" data-i18n="edu.backend.title">Imersão Dev Back-End</a></p>
+          <p class="edu-meta" data-i18n="edu.meta">Alura · 4 h · certificado</p>
+        </div>
+      </aside>
+    </div>
   </section>
 
-  <section id="formacao">
-    <h2 data-i18n="edu.h2">Formação</h2>
-    <ol class="entries">
-      <li class="entry">
-        <div class="when">2023 – 2026</div>
-        <div>
-          <div class="what" data-i18n="edu.grad.title">Bacharelado em TIC <span class="org">· <a href="https://tic.ufsc.br/" target="_blank" rel="noopener">UFSC</a>, campus Araranguá</span></div>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">09/2026</div>
-        <div>
-          <div class="what" data-i18n="edu.dados.title">Imersão Engenharia de Dados com IA <span class="org">· Alura, 4 h</span></div>
-          <p><a href="https://cursos.alura.com.br/immersion/certificate/870fbf79-d404-41a5-aa83-09f646d0f03c" target="_blank" rel="noopener" data-i18n="edu.cert">certificado</a></p>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="when">07/2026</div>
-        <div>
-          <div class="what" data-i18n="edu.backend.title">Imersão Dev Back-End <span class="org">· Alura, 4 h</span></div>
-          <p><a href="https://cursos.alura.com.br/immersion/certificate/513eef50-46ef-4b8c-b30c-eafadacb5631" target="_blank" rel="noopener" data-i18n="edu.cert">certificado</a></p>
-        </div>
-      </li>
-    </ol>
-  </section>
-
-  <section id="contato">
-    <h2 data-i18n="contact.h2">Contato</h2>
-    <div>
-      <p data-i18n="contact.p">O jeito mais rápido de falar comigo é por e-mail.</p>
-      <dl class="contact-list">
-        <dt>E-mail</dt><dd><a href="mailto:karolini188@gmail.com">karolini188@gmail.com</a></dd>
-        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/karolini-ronzani-pedrozo-48124b268/" target="_blank" rel="noopener">karolini-ronzani-pedrozo</a></dd>
-        <dt>GitHub</dt><dd><a href="https://github.com/KaroliniRPedrozo" target="_blank" rel="noopener">KaroliniRPedrozo</a></dd>
-        <dt data-i18n="contact.where">Onde</dt><dd><a href="https://maps.app.goo.gl/suQ3AZUwepTVWQcE9" target="_blank" rel="noopener" data-i18n="contact.where.v">Araranguá, SC</a></dd>
-      </dl>
+  <section id="contato" class="contact">
+    <div class="wrap">
+      <p class="contact-kicker" data-i18n="contact.kicker">Tem uma vaga ou um projeto?</p>
+      <a class="contact-email" href="mailto:karolini188@gmail.com">karolini188@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/karolini-ronzani-pedrozo-48124b268/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/KaroliniRPedrozo" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://maps.app.goo.gl/suQ3AZUwepTVWQcE9" target="_blank" rel="noopener" data-i18n="contact.where">Araranguá, SC</a>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <div class="wrap">© 2026 Karolini R. Pedrozo</div>
+<footer class="wrap site-footer">
+  <span>© 2026 Karolini R. Pedrozo</span>
+  <a href="#top" data-i18n="footer.top">Voltar ao topo</a>
 </footer>
 
 <script src="js/main.js"></script>
